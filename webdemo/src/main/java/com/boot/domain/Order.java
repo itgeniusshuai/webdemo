@@ -14,7 +14,6 @@ public class Order implements Serializable{
     // 卖家ID
     private Integer sellerId;
     private Integer buyerId;
-    private String goodsId;
     private String totalAmount;
     private Integer status;
     private Date createTime;
