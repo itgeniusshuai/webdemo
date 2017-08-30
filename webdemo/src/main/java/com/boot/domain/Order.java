@@ -14,6 +14,7 @@ public class Order implements Serializable{
     private Long id;
     // 卖家ID
     private Long sellerId;
+    // 买家id
     private Long buyerId;
     private BigDecimal totalAmount;
     private Integer status;
