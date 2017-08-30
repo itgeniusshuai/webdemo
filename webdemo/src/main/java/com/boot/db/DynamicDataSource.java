@@ -1,25 +1,17 @@
 package com.boot.db;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.InputStream;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Properties;
-
-import javax.annotation.PostConstruct;
-import javax.sql.DataSource;
-
-import com.boot.JpaApplication;
-import org.springframework.beans.factory.annotation.Configurable;
+import com.alibaba.druid.pool.DruidDataSourceFactory;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
 import org.springframework.stereotype.Component;
 
-import com.alibaba.druid.pool.DruidDataSourceFactory;
+import javax.annotation.PostConstruct;
+import javax.sql.DataSource;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Properties;
 
 @Component
 @Configuration

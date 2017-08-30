@@ -1,7 +1,5 @@
 package com.boot.db;
 
-import java.lang.reflect.Method;
-
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
@@ -11,6 +9,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
+
+import java.lang.reflect.Method;
 
 /**
  *	配置一个切面, 根据注解来实现读写分离 
