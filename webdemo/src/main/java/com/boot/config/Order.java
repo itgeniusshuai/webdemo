@@ -13,5 +13,5 @@ public class Order implements Serializable{
     private Integer sellerId;
     private Integer buyerId;
     private String productId;
-    private String 
+
 }
