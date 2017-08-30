@@ -9,9 +9,9 @@ import java.math.BigDecimal;
 @Setter
 @Getter
 public class OrderDetail implements Serializable {
-    private String id;
-    private String orderId;
-    private String goodsId;
+    private Long id;
+    private Long orderId;
+    private Long goodsId;
     private Integer goodsCount;
     private BigDecimal goodsPrice;
 }
