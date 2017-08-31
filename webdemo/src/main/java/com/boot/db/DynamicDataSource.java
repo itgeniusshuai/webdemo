@@ -13,7 +13,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
-@Component
+@Component("dataSource")
 @Configuration
 @PropertySource(value = {"classpath:dataSource.properties"},encoding="utf-8")
 public class DynamicDataSource extends AbstractRoutingDataSource {
