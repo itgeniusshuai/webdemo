@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
@@ -20,6 +21,7 @@ import java.util.Map;
 @SpringBootApplication
 @EnableAutoConfiguration
 @EnableConfigurationProperties
+@ComponentScan
 @EnableTransactionManagement(proxyTargetClass = true) // 启注解事务管理
 public class StartApplication {
     public static void main(String[] args) {
