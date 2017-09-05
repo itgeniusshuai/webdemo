@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping("/mq")
 public class TestMqController {
 
+    private final static String MyRouteKey = "spring-boot-routingKey-test";
     @Autowired
     private RabbitTemplate rabbitTemplate;
     @RequestMapping("/send")

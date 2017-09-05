@@ -19,7 +19,7 @@ public class AmqpConfig {
 //    public static final String EXCHANGE   = "spring-boot-exchange-fanout";
     public static final String EXCHANGE   = "spring-boot-exchange-topic";
 //    public static final String EXCHANGE   = "spring-boot-exchange";
-    public static final String ROUTINGKEY = "spring-boot-routingKey";
+    public static final String ROUTINGKEY = "spring-boot-routingKey-#";
 //    public static final String ROUTINGKEY = "spring-boot-routingKey";
 
     @Value("${spring.queue}")
